@@ -16,7 +16,7 @@
   font-weight: 400;
   line-height: 24.51px;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
 
   .logo {
@@ -40,18 +40,17 @@
     margin-left: 76px;
     margin-right: 76px;
 
-    span{
+    span {
       width: fit-content;
       height: 25px;
       cursor: pointer;
 
-      &:hover{
-        color: #F6BA05;
+      &:hover {
+        color: #f6ba05;
       }
     }
-    
   }
-  
+
   .contacts {
     display: flex;
     align-items: flex-end;

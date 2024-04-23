@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @font-face {
-	font-family: 'Coralwaves-Regular';
-	src: url('../src/fonts/coralwaves-regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('../src/fonts/coralwaves-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../src/fonts/coralwaves-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../src/fonts/coralwaves-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../src/fonts/coralwaves-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../src/fonts/coralwaves-regular.svg#coralwaves-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: 'Coralwaves-Regular';
+  src: url('../src/fonts/coralwaves-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../src/fonts/coralwaves-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE < 9 */ url('../src/fonts/coralwaves-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../src/fonts/coralwaves-regular.woff')
+      format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+      url('../src/fonts/coralwaves-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('../src/fonts/coralwaves-regular.svg#coralwaves-regular')
+      format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
 body {
