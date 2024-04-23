@@ -1,0 +1,19 @@
+%main-screen_half {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  min-width: 50%;
+  max-width: 50%;
+  height: 100%;
+}
+
+%button-common {
+  border-radius: 31px;
+  font-weight: 600;
+  color: #501D50;
+  background-color: #F6BA05;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
