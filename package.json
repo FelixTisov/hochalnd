@@ -1,7 +1,7 @@
 {
-  "name": "softline-landing",
+  "name": "Hochland-landing",
   "version": "1.0.0",
-  "description": "A simple landing for \"Softline\" company",
+  "description": "A landing page for the \"Hochland\" company",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --open",
