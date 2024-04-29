@@ -3,19 +3,17 @@
 @font-face {
   font-family: 'Coralwaves-Regular';
   src: url('../src/fonts/coralwaves-regular.eot'); /* IE 9 Compatibility Mode */
-  src: url('../src/fonts/coralwaves-regular.eot?#iefix')
-      format('embedded-opentype'),
+  src: url('../src/fonts/coralwaves-regular.eot?#iefix') format('embedded-opentype'),
     /* IE < 9 */ url('../src/fonts/coralwaves-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('../src/fonts/coralwaves-regular.woff')
-      format('woff'),
-    /* Firefox >= 3.6, any other modern browser */
-      url('../src/fonts/coralwaves-regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-      url('../src/fonts/coralwaves-regular.svg#coralwaves-regular')
+    /* Super Modern Browsers */ url('../src/fonts/coralwaves-regular.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../src/fonts/coralwaves-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../src/fonts/coralwaves-regular.svg#coralwaves-regular')
       format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
 body {
+  padding: 0;
   margin: 0;
   width: 100%;
   -webkit-font-smoothing: antialiased;

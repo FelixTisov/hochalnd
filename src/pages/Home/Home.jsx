@@ -1,6 +1,12 @@
-import React from 'react'
 import './Home.scss'
 import Header from '../../components/header/Header'
+import mainScreenBg from '../../images/main-screen-bg.svg'
+import woman from '../../images/woman.png'
+import man from '../../images/man.png'
+import transport from '../../images/transport.svg'
+import schedule from '../../images/schedule.svg'
+import insurance from '../../images/insurance.svg'
+import compensation from '../../images/compensation.svg'
 
 function Home() {
   return (
@@ -27,19 +33,19 @@ function Home() {
               className="main-scrren_bg-image"
               type="svg"
               alt="задний фон"
-              src={require('../../images/main-screen-bg.svg')}
+              src={mainScreenBg}
             ></img>
             <img
               className="main-scrren_woman-image"
               type="png"
               alt="женщина"
-              src={require('../../images/woman.png')}
+              src={woman}
             ></img>
             <img
               className="main-scrren_man-image"
               type="png"
               alt="мужцина"
-              src={require('../../images/man.png')}
+              src={man}
             ></img>
           </div>
         </div>
@@ -55,7 +61,7 @@ function Home() {
             <img
               type="svg"
               alt="Корпоративный транспорт"
-              src={require('../../images/transport.svg')}
+              src={transport}
             ></img>
             <span>
               Корпоративный <br />
@@ -67,7 +73,7 @@ function Home() {
             <img
               type="svg"
               alt="График 2/2"
-              src={require('../../images/schedule.svg')}
+              src={schedule}
             ></img>
             <span>График 2/2</span>
           </div>
@@ -76,7 +82,7 @@ function Home() {
             <img
               type="svg"
               alt="Медицинская страховка"
-              src={require('../../images/insurance.svg')}
+              src={insurance}
             ></img>
             <span>
               Медицинская <br />
@@ -88,7 +94,7 @@ function Home() {
             <img
               type="svg"
               alt="Компенсация питания"
-              src={require('../../images/compensation.svg')}
+              src={compensation}
             ></img>
             <span>
               Компенсация <br />

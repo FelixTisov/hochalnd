@@ -1,5 +1,5 @@
-import React from 'react'
 import './Header.scss'
+import logo from '../../images/logo.svg'
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
         <img
           type="svg"
           alt="логотип"
-          src={require('../../images/logo.svg')}
+          src={logo}
         ></img>
       </div>
       <div className="nav-container">
