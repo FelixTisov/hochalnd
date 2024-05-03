@@ -12,7 +12,7 @@
   min-height: 100%;
 }
 
-.main-screen {
+.mainScreen {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -22,7 +22,7 @@
   height: 766px;
   background-color: #501d50;
 
-  .main-screen_content {
+  .content {
     display: flex;
     align-items: center;
     position: relative;
@@ -31,7 +31,7 @@
     min-width: 100%;
     height: 100%;
 
-    .main-screen_content-left {
+    .leftBlock {
       @extend %main-screen_half;
       flex-direction: column;
       align-items: flex-start;
@@ -40,7 +40,7 @@
       padding-top: 0;
       box-sizing: border-box;
 
-      .title-container {
+      .title {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -77,23 +77,23 @@
       }
     }
 
-    .main-screen_content-right {
+    .rightBlock {
       @extend %main-screen_half;
       align-items: flex-end;
 
-      .main-scrren_bg-image {
+      .bgImage {
         position: absolute;
         z-index: 3;
         right: 10px;
       }
 
-      .main-scrren_woman-image {
+      .womanImage {
         position: absolute;
         z-index: 4;
         right: 290px;
       }
 
-      .main-scrren_man-image {
+      .manImage {
         position: absolute;
         z-index: 5;
         right: 35px;
@@ -115,7 +115,7 @@
   margin: 40px 0 40px 0;
   box-sizing: border-box;
 
-  .advantages_title {
+  .title {
     display: flex;
     width: 100%;
     min-width: 100%;
@@ -131,16 +131,16 @@
       line-height: 120px;
     }
 
-    .advantages_left-span {
+    .leftSpan {
       color: #00178a;
     }
 
-    .advantages_right-span {
+    .rightSpan {
       color: #a25a9f;
     }
   }
 
-  .advantages_details {
+  .details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,7 +149,7 @@
     min-height: 286px;
     max-height: 286px;
 
-    .advantages_item {
+    .item {
       display: flex;
       align-items: center;
       justify-content: flex-start;

@@ -1,35 +1,45 @@
-import './Header.scss'
+import styles from './Header.module.scss'
 import logo from '../../images/logo.svg'
 
 function Header() {
   return (
-    <div className="header">
-      <div className="logo">
+    <div className={styles.header}>
+      <div className={styles.logo}>
         <img
           type="svg"
           alt="логотип"
           src={logo}
         ></img>
       </div>
-      <div className="nav-container">
-        <div className="nav-item">
+      <div className={styles.navigation}>
+        <div className={styles.item}>
           <span>Что мы предлагаем</span>
         </div>
-        <div className="nav-item">
+        <div className={styles.item}>
           <span>Где мы находимся</span>
         </div>
-        <div className="nav-item">
+        <div className={styles.item}>
           <span>О компании</span>
         </div>
-        <div className="nav-item">
+        <div className={styles.item}>
           <span>Отзывы</span>
         </div>
       </div>
-      <div className="contacts">
-        <span>+7 (999) 999-99-99</span>
-        <span>info@mail.ru</span>
+      <div className={styles.contacts}>
+        <a
+          className={styles.item}
+          href="tel:+79999999999"
+        >
+          +7 (999) 999-99-99
+        </a>
+        <a
+          className={styles.item}
+          href="mailto:info@mail.ru"
+        >
+          info@mail.ru
+        </a>
       </div>
-      <button className="header-button">Стать частью команды</button>
+      <button className={styles.headerButton}>Стать частью команды</button>
     </div>
   )
 }

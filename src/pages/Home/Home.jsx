@@ -1,4 +1,4 @@
-import './Home.scss'
+import styles from './Home.module.scss'
 import Header from '../../components/header/Header'
 import mainScreenBg from '../../images/main-screen-bg.svg'
 import woman from '../../images/woman.png'
@@ -10,12 +10,12 @@ import compensation from '../../images/compensation.svg'
 
 function Home() {
   return (
-    <div className="home">
-      <div className="main-screen">
+    <div className={styles.home}>
+      <div className={styles.mainScreen}>
         <Header />
-        <div className="main-screen_content">
-          <div className="main-screen_content-left">
-            <div className="title-container">
+        <div className={styles.content}>
+          <div className={styles.leftBlock}>
+            <div className={styles.title}>
               <h1>
                 В Hochland
                 <br />я хочу работать
@@ -26,23 +26,23 @@ function Home() {
               <br />
               комфортные и безопасные условия
             </span>
-            <button className="button">Стать частью команды</button>
+            <button className={styles.button}>Стать частью команды</button>
           </div>
-          <div className="main-screen_content-right">
+          <div className={styles.rightBlock}>
             <img
-              className="main-scrren_bg-image"
+              className={styles.bgImage}
               type="svg"
               alt="задний фон"
               src={mainScreenBg}
             ></img>
             <img
-              className="main-scrren_woman-image"
+              className={styles.womanImage}
               type="png"
               alt="женщина"
               src={woman}
             ></img>
             <img
-              className="main-scrren_man-image"
+              className={styles.manImage}
               type="png"
               alt="мужцина"
               src={man}
@@ -51,13 +51,13 @@ function Home() {
         </div>
       </div>
 
-      <div className="advantages">
-        <div className="advantages_title">
-          <span className="advantages_left-span">Потому что&nbsp;</span>
-          <span className="advantages_right-span">здесь</span>
+      <div className={styles.advantages}>
+        <div className={styles.title}>
+          <span className={styles.leftSpan}>Потому что&nbsp;</span>
+          <span className={styles.rightSpan}>здесь</span>
         </div>
-        <div className="advantages_details">
-          <div className="advantages_item">
+        <div className={styles.details}>
+          <div className={styles.item}>
             <img
               type="svg"
               alt="Корпоративный транспорт"
@@ -69,7 +69,7 @@ function Home() {
             </span>
           </div>
 
-          <div className="advantages_item">
+          <div className={styles.item}>
             <img
               type="svg"
               alt="График 2/2"
@@ -78,7 +78,7 @@ function Home() {
             <span>График 2/2</span>
           </div>
 
-          <div className="advantages_item">
+          <div className={styles.item}>
             <img
               type="svg"
               alt="Медицинская страховка"
@@ -90,7 +90,7 @@ function Home() {
             </span>
           </div>
 
-          <div className="advantages_item">
+          <div className={styles.item}>
             <img
               type="svg"
               alt="Компенсация питания"
@@ -104,7 +104,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="transportation"></div>
+      <div className={styles.transportation}></div>
     </div>
   )
 }
