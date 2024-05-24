@@ -7,6 +7,8 @@ import transport from '../../images/transport.svg'
 import schedule from '../../images/schedule.svg'
 import insurance from '../../images/insurance.svg'
 import compensation from '../../images/compensation.svg'
+import map from '../../images/map.png'
+import production from '../../images/production.png'
 
 function Home() {
   return (
@@ -51,60 +53,113 @@ function Home() {
         </div>
       </div>
 
-      <div className={styles.advantages}>
-        <div className={styles.title}>
-          <span className={styles.leftSpan}>Потому что&nbsp;</span>
-          <span className={styles.rightSpan}>здесь</span>
+      <div className={styles.contentColumn}>
+        <div className={styles.advantages}>
+          <div className={styles.title}>
+            <p>
+              <span className={styles.leftSpan}>Потому что&nbsp;</span>
+              <span className={styles.rightSpan}>здесь</span>
+            </p>
+          </div>
+          <div className={styles.details}>
+            <div className={styles.item}>
+              <img
+                type="svg"
+                alt="Корпоративный транспорт"
+                src={transport}
+              ></img>
+              <span>
+                Корпоративный <br />
+                транспорт
+              </span>
+            </div>
+
+            <div className={styles.item}>
+              <img
+                type="svg"
+                alt="График 2/2"
+                src={schedule}
+              ></img>
+              <span>График 2/2</span>
+            </div>
+
+            <div className={styles.item}>
+              <img
+                type="svg"
+                alt="Медицинская страховка"
+                src={insurance}
+              ></img>
+              <span>
+                Медицинская <br />
+                страховка
+              </span>
+            </div>
+
+            <div className={styles.item}>
+              <img
+                type="svg"
+                alt="Компенсация питания"
+                src={compensation}
+              ></img>
+              <span>
+                Компенсация <br />
+                питания
+              </span>
+            </div>
+          </div>
         </div>
-        <div className={styles.details}>
-          <div className={styles.item}>
-            <img
-              type="svg"
-              alt="Корпоративный транспорт"
-              src={transport}
-            ></img>
-            <span>
-              Корпоративный <br />
-              транспорт
-            </span>
-          </div>
 
-          <div className={styles.item}>
-            <img
-              type="svg"
-              alt="График 2/2"
-              src={schedule}
-            ></img>
-            <span>График 2/2</span>
+        <div className={styles.transportation}>
+          <div className={styles.title}>
+            <p>
+              <span className={styles.leftSpan}>
+                Бесплатно <br />
+                отвезем на автобусе&nbsp;
+              </span>
+              <span className={styles.rightSpan}>
+                на <br />
+                работу и обратно
+              </span>
+            </p>
           </div>
+          <div className={styles.map}>
+            <img
+              type="png"
+              alt="Карта"
+              src={map}
+            ></img>
+          </div>
+        </div>
 
-          <div className={styles.item}>
-            <img
-              type="svg"
-              alt="Медицинская страховка"
-              src={insurance}
-            ></img>
-            <span>
-              Медицинская <br />
-              страховка
-            </span>
+        <div className={styles.about}>
+          <div className={styles.mainInformation}>
+            <div className={styles.title}>
+              <p>
+                <span className={styles.leftSpan}>Hochland&nbsp;</span>
+                <span className={styles.rightSpan}>- это</span>
+              </p>
+            </div>
+            <div className={styles.description}>
+              <p>
+                Hochland – это отличное сочетание возможностей крупной международной компании и
+                атмосферы настоящей дружной семьи. Мы занимаемся тем, что лучше всего умеем и любим
+                – производим сыр и продвигаем нашу продукцию на рынках более 30 стран мира.
+              </p>
+              <p>
+                Устойчивое развитие – это плод совместных усилий всех сотрудников. В этой теплой
+                дружественной атмосфере эксперты Hochland создают продукцию, которую можно встретить
+                на прилавке, пожалуй, каждого магазина в России.
+              </p>
+            </div>
           </div>
-
-          <div className={styles.item}>
-            <img
-              type="svg"
-              alt="Компенсация питания"
-              src={compensation}
-            ></img>
-            <span>
-              Компенсация <br />
-              питания
-            </span>
-          </div>
+          <div className={styles.statistics}></div>
+          <img
+            type="png"
+            alt="Производство"
+            src={production}
+          ></img>
         </div>
       </div>
-
-      <div className={styles.transportation}></div>
     </div>
   )
 }
